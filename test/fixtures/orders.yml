@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  songs: 
+  ordered: false
+  isComplete: false
+
+two:
+  songs: 
+  ordered: false
+  isComplete: false
