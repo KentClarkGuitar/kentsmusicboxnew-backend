@@ -1,14 +1,13 @@
 class CreateSongs < ActiveRecord::Migration[5.2]
   def change
     create_table :songs do |t|
-      t.number :number
+      t.string :sku
       t.string :genre
       t.string :releaseDate
       t.string :album
       t.string :link
-      t.string :songName
+      t.string :name
       t.string :artistName
-      t.number :id
 
       t.timestamps
     end

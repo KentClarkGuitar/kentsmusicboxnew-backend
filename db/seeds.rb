@@ -5,3 +5,12 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+
+Song.destroy_all
+
+Song.create([
+    {name: 'Rainbow Girl', artistName: 'Kent van Kuller', genre: 'Rock', sku: 2, album: 'Only Acting', releaseDate: '11/24/2018', link: 'link'},
+    {name: 'Only Acting', artistName: 'Kent van Kuller', genre: 'Rock', sku: 4, album: 'Only Acting', releaseDate: '11/24/2018', link: 'link'},
+    {name: 'Milennial Blues', artistName: 'Kent van Kuller', genre: 'Rock', sku: 1, album: 'Only Acting', releaseDate: '11/24/2018', link: 'link'}
+])

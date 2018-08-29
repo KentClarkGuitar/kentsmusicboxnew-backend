@@ -1,24 +1,6 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+- Hello and welcome to Kent's Music Box!
 
-Things you may want to cover:
+- Here, you can stream Kent's Music an unlimited number of times and stay up to date with Kent's activites!
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
