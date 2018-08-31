@@ -4,3 +4,11 @@
 
 - Here, you can stream Kent's Music an unlimited number of times and stay up to date with Kent's activites!
 
+- Please Log In with your email and password. 
+ 
+- Kent's Music Box was built in the USA by Kent van Kuller.
+
+- Kent's Music Box was written using Bootstrap, HTML, CSS, JavaScript, React, and Ruby on Rails (for the backend). 
+
+- You can reach Kent at Kullerblue@icloud.com
+
