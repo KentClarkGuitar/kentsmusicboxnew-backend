@@ -10,6 +10,12 @@ Rails.application.routes.draw do
       post 'users/signup', to: 'users#create'
 
       post 'users/login', to: 'sessions#create'
+
+      get 'songs/getsongs', to: 'songs#index'
+
+      get 'songs/:id', to: 'songs#show'
+      
+      get 'products/:id', to: 'products#show'
     end
   
 end

@@ -3,6 +3,15 @@ class ApplicationController < ActionController::Base
 
     skip_before_action :verify_authenticity_token
 
+    def authenticate_user!
+        user = authenticate_with_http_token do |token|
+            body = JWT.decode(token, secret_key)[0]
+            User.find(body["user_id"])
+        end
+
+        render json: { error: "Invalid token" }, status: :unauthorized unless user
+    end
+
     def cors_check
         headers['Access-Control-Allow-Origin'] = '*'
         headers['Access-Control-Allow-Methods'] = 'POST, PUT, DELETE, GET, OPTIONS'

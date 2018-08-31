@@ -2,10 +2,6 @@ class UsersController < ApplicationController
     # before_action :cors_check
 
     def create
-        p '*' * 100
-        p params
-        p '*' * 100
-
        user = User.new(
            name: params[:name],
            email: params[:email],
@@ -13,11 +9,9 @@ class UsersController < ApplicationController
            password_confirmation: params[:password_confirmation]
        )
        if user.save
-        payload = { user_id: user.id }
+        payload = { user: user.to_json }
         jwt = JWT.encode(payload, secret_key)
-        # p jwt
-        # render json: user, status: :created
-        render json: jwt.to_json, status: :ok
+        render json: {jwt: jwt}, status: :ok
        else
         render json: {errors: user.errors}, status: :unprocessable_entity 
        end
@@ -34,6 +28,5 @@ class UsersController < ApplicationController
     def user_params
         params.permit(:email, :password, :password_confirmation, :name)
     end
-
 
 end
