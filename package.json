@@ -6,7 +6,7 @@
     "yarn": "1.6.0"
   },
   "scripts": {
-    "build": "yarn --cwd kentsmusicbox-frontend install && yarn --cwd kentsmusicbox-frontend build",
+    "build": "yarn --cwd kentsmusicbox-frontend/ install && yarn --cwd kentsmusicbox-frontend/ build",
     "deploy": "cp -a kentsmusicbox-frontend/build/. public/",
     "heroku-postbuild": "yarn build && yarn deploy"
   }
