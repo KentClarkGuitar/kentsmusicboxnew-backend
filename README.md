@@ -3,9 +3,9 @@
 # Introduction
 ![alt text](https://i.imgur.com/kYqwORk.png)
 
-https://i.imgur.com/rVaeOQQ.png
+![alt text](https://i.imgur.com/rVaeOQQ.png)
 
-https://i.imgur.com/UKxfsyu.png
+![alt text](https://i.imgur.com/UKxfsyu.png)
 
 - Hello and welcome to Kent's Music Box!
 
