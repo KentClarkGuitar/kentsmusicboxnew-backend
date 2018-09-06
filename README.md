@@ -1,7 +1,7 @@
 # README
 
 # Introduction
-https://i.imgur.com/kYqwORk.png
+![alt text](https://i.imgur.com/kYqwORk.png)
 
 https://i.imgur.com/rVaeOQQ.png
 
