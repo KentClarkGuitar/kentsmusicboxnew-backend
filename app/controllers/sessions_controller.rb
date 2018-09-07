@@ -2,7 +2,7 @@ class SessionsController < ApplicationController
     def create
         user = User.find_by(email: params[:email])
         if user && user.authenticate(params[:password])
-            payload = {user_id: user.id}
+            payload = {user: user.to_json}
             jwt = JWT.encode(payload, secret_key)
             render json: {jwt:jwt}, status: :ok
         else 

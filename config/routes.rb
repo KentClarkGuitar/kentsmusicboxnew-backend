@@ -16,6 +16,15 @@ Rails.application.routes.draw do
       get 'songs/:id', to: 'songs#show'
       
       get 'products/:id', to: 'products#show'
+
+      post 'comments', to: 'comments#create'
+
+      get 'comments/:song_id', to: 'comments#show'
+
+      put 'comments/:comment_id', to: 'comments#update'
+
+      delete 'comments/:comment_id', to: 'comments#delete'
+
     end
   
 end
