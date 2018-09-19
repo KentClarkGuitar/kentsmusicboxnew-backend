@@ -1,2 +1,2 @@
-web: PORT=3000 yarn --cwd kentsmusicbox-frontend/ start
+web: PORT=8080 yarn --cwd kentsmusicbox-frontend/ start
 api: PORT=3001 bundle exec rails s
